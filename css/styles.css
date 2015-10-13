@@ -1,0 +1,370 @@
+/*Generally Applied*/
+
+.container {
+  width: 100%;
+}
+
+header{
+  font-size: 2em;
+  text-align: center;
+  padding: 1%;
+}
+
+body {
+  position: relative;
+}
+
+.anchor {
+  padding-top: 51px;
+}
+
+/*Buttons*/
+
+.btn {
+  font-weight: 600;
+  background-color: #35404F;
+}
+
+.btn:hover {
+  background-color:#CDDEE8;
+}
+
+
+/*Nav Bar*/
+
+.project a {
+  float:left;
+  color: #FF3399;
+	padding: 1em 1em .5em 1em;
+  text-decoration:none;
+}
+
+.navbar-header {
+  float: right;
+  text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: 700;
+	color: white;
+}
+
+.navbar .nav > li > a {
+  color: white;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #FF3399;
+}
+
+
+.nav a {
+	transition: color 600ms;
+	-webkit-transition: color 600ms;
+	-moz-transition: color 600ms;
+	-o-transition: color 600ms;
+}
+
+/*Hero Images*/
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+.carousel-caption h3 {
+  font-size: 3.5em;
+  font-weight: 600;
+  color: #FF3399;
+  padding-bottom: 15%;
+}
+
+.slide2 h3 {
+  color: white;
+}
+
+/*Goal Columns*/
+
+.goals {
+  background-color: #35404F;
+  font-size: 1em;
+  color: white;
+  padding: 2%;
+}
+
+
+/*Goal Buttons*/
+
+.goal {
+  color: white;
+}
+
+.goals h2, p{
+  padding: 0 2%;
+}
+
+.goal:hover,
+.goal:focus,
+.goal:active:focus {
+  outline: none;
+  background-color: #CDDEE8;
+}
+
+
+/*About Section*/
+
+.about-header {
+  padding: 1%;
+  color: #35404F;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #F2F6F9;
+}
+
+.about {
+  padding: 1%;
+  border-top-style: dashed;
+  border-width: 1px;
+  background-color: white;
+  font-size: 1.3em;
+}
+
+.about h2{
+  font-weight: bold;
+}
+
+
+/*Work Section*/
+
+.work-header {
+  padding: 1%;
+  color: #35404F;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: #F2F6F9;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  border-width: 1px;
+  text-align:center;
+  font-weight: bold;
+}
+
+.work h4 {
+  font-size: 1.5em;
+  text-transform: lowercase;
+  font-weight: bold;
+  color: #35404F;
+  text-align: left;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 63%;
+  padding-right: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vid {
+  margin-top: 2%;
+}
+
+#tooltip {
+  color: black;
+}
+
+/*JS Images*/
+
+.image {
+  box-sizing: border-box;
+  border: 2px solid pink;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  position: relative;
+  margin: 2%;
+  margin-bottom: 5%;
+}
+
+.info {
+  display: inline-block;
+  color: #FF3399;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  
+}
+
+.proj-title {
+  font-weight: bold;
+}
+
+/*Contact*/
+
+#contact {
+  background-image: url("../img/vespa.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container contact {
+  text-align: left;
+  display: inline-block;
+  background-attachment: fixed;
+}
+
+.contacts {
+  float: left;
+  padding: 1%;
+}
+
+.contact-information {
+  padding-left: 3%;
+}
+
+.contact {
+  color: white;
+  font-weight: 600;
+}
+
+.contact h1 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 600;
+  padding-bottom: 2%;
+}
+
+.contact a {
+  color: white;
+  font-weight: 600;
+}
+
+.contact a:hover {
+  color: #FF3399;
+}
+
+.contact a:hover {
+  transition: color 600ms;
+	-webkit-transition: color 600ms;
+	-moz-transition: color 600ms;
+	-o-transition: color 600ms;
+}
+
+.glyphicon:hover {
+  color: #FF3399;
+}
+
+.glyphicon:hover {
+	transition: color 600ms;
+	-webkit-transition: color 600ms;
+	-moz-transition: color 600ms;
+	-o-transition: color 600ms;
+}
+
+/*Contact form*/
+
+.form-group {
+  padding: 1%;
+}
+
+.form-group button {
+  float: left;
+  margin: 1% 0;
+  font-weight: 600;
+  background-color: #FFFFFF
+}
+
+.contact-form {
+  display: inline-block;
+}
+
+.google-map {
+  margin: 5% 2%;
+}
+
+/*Faq*/
+
+.faq {
+  background-color: #6E7171;
+  padding: 2%;
+  width: 100%;
+}
+
+.faqheader {
+  margin: 0 auto;
+  padding: 0 1%;
+}
+
+.learn-more {
+  float: left;
+  padding: 2%;
+}
+
+.modal-button {
+  float: right;
+  padding: 3% 2%;
+}
+
+.modal-button .btn {
+  background-color: #FF3399;
+  border: #FF3399;
+}
+
+.modal-body{
+  height: 500px;
+}
+
+#resume {
+  padding: 1%;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*Table*/
+
+
+table {
+  width: 96%;
+  margin: 2% auto;
+}
+
+th, td {
+  padding: 1%;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/*footer*/
+
+footer {
+  padding: 1%;
+}
+
+footer p {
+  float: left;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.twitter-follow-button {
+  margin-top: 1.3%;
+  margin-right: 1.5%;
+  float: right;
+}
+
+
+

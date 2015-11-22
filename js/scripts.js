@@ -1,4 +1,4 @@
-var myKitties =[ {title: "Project One", pic: "img/barcelonasq.jpg"}, {title: "Project Two", pic: "img/yoyomansq.jpg"}, {title: "Project Three", pic: "img/cloudssq.jpg"}, {title: "Project Four", pic: "img/horsessq.jpg"}];
+var myKitties =[ {title: "Project One", pic: "img/litote.jpg"}, {title: "Project Two", pic: "img/yoyomansq.jpg"}, {title: "Project Three", pic: "img/cloudssq.jpg"}, {title: "Project Four", pic: "img/horsessq.jpg"}];
 
 
 $(document).ready(function(){

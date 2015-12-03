@@ -137,10 +137,10 @@ body {
 /*Work Section*/
 
 .work_header h1{
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 700;
   font-family: 'Megrim', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
-  color: #FFEF94;
+  color: #255E69;
   background-image: url('../img/backocean.jpg');
   background-size: cover;
   background-position: center;
@@ -152,6 +152,12 @@ body {
 .projects {
   padding: 2%;
   display: inline-block;
+}
+
+.project_dropdown {
+  width: 100%;
+  background-color: grey;
+  color: white;
 }
 
 .thumbnail {

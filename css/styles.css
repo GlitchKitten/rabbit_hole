@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-header{
+header {
   font-size: 2em;
   text-align: center;
   padding: 1%;
@@ -56,7 +56,6 @@ body {
   color: #FF3399;
 }
 
-
 .nav a {
 	transition: color 600ms;
 	-webkit-transition: color 600ms;
@@ -66,17 +65,21 @@ body {
 
 /*Hero Images*/
 
+.hero {
+  padding: 20%;
+}
+
 .hero_image {
   background-image: url('../img/sea.jpg');
+  background-attachment: fixed;
   background-size: cover;
   width: 100%;
   text-align: center;
-  padding: 20%;
   margin: 0;
   margin-bottom: 2%;
 }
 
-.hero_text{ 
+.hero_text h1{ 
   font-size: 5em;
   font-weight: 700;
   font-family: 'Megrim', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
@@ -87,33 +90,6 @@ body {
   font-size: 3em;
   font-weight: 550;
   color: white;
-}
-
-/*Goal Columns*/
-
-.goals {
-  background-color: #35404F;
-  font-size: 1em;
-  color: white;
-  padding: 2%;
-}
-
-
-/*Goal Buttons*/
-
-.goal {
-  color: white;
-}
-
-.goals h2, p{
-  padding: 0 2%;
-}
-
-.goal:hover,
-.goal:focus,
-.goal:active:focus {
-  outline: none;
-  background-color: #CDDEE8;
 }
 
 
@@ -128,15 +104,20 @@ body {
 .profile {
   padding: 2%;
   border-radius: 50%;
+  float: left;
 }
 
 .progress .progress-bar {
   background-color: #BABEC2;
 }
 
-/*Work Section*/
+#cv_button{
+  background-color: black;
+}
 
-.work_header h1{
+/* Projects */
+
+.work_header h1 {
   font-size: 4em;
   font-weight: 700;
   font-family: 'Megrim', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
@@ -150,27 +131,133 @@ body {
 }
 
 .projects {
-  padding: 2%;
   display: inline-block;
-}
-
-.project_dropdown {
   width: 100%;
-  background-color: grey;
+}
+
+.project_link {
+  padding: 1%;
+}
+
+.project_link a {
+  text-decoration: none;
   color: white;
+  padding-top: 1%;
 }
 
-.thumbnail {
-  padding: 2%;
+.glyphicon-edit {
   margin: 0 auto;
-}
-
-
-#tooltip {
   color: black;
 }
 
+.column-item {             
+  height: 100%;
+  width: 100%;       
+} 
+
+.column-item-content {  
+  text-align: center;           
+  top: 0;                
+  left: 0;    
+  right: 0;
+  bottom: 0;
+  cursor: default;
+  padding: 1%;           
+}
+
+.person {                
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   -webkit-tap-highlight-color: transparent;                
+}                      
+
+#litote{                
+  background-image: url('../img/litote.jpg');                    
+}
+
+#in_progress {
+  background-image: url('../img/pen1.png'); 
+  background-size: 3%;
+  background-color: #555968;
+}
+
+#coming_soon {
+  background-image: url('../img/lab1.png'); 
+  background-size: 5%;
+  background-color: #727787;
+}
+
+.person .column-item-content {    
+  text-align: center;    
+  background: #2f363b;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;    
+  transition: opacity 500ms;        
+}     
+  font-size: 120%    
+}                    
+
+.person .column-item-content:before {                    
+  content: "";    
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;        
+  width: 1px;                
+  margin-right: -4px;            
+}  
+
+.person:hover .column-item-content{opacity:1;}
+
+.person-details {             
+  font-family: 'Montserrat', sans-serif;                     
+  color: white;             
+  display: inline-block;        
+  vertical-align: middle;         
+  width: 90%;                
+  -webkit-transform:translate3d(0,10px,0);            
+  transform: translate3d(0,10px,0);    
+  -webkit-transition: 500ms;        
+  transition: 500ms;             
+}                     
+@media (min-width: $mq-large) {     
+  max-width: 50em            
+}   
+
+.person:hover .person-details {    
+  -webkit-transform: none;        
+  transform: none;            
+}
+
+.person-name {             
+  font-size: 25px;             
+  text-transform: uppercase;                   
+  letter-spacing: -1px;         
+  line-height: 1;            
+  text-align: center;           
+}                    
+
+.person-title {    
+  font-size: 10px;
+  font-weight: 400;
+  display: block;            
+  margin: 0 auto;            
+}
+
 /*JS Images*/
+
+.info {
+  display: inline-block;
+  color: #FF3399;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  position: absolute;
+  top: 15%;
+  left: 4%;  
+}
 
 .image {
   box-sizing: border-box;
@@ -183,20 +270,6 @@ body {
   margin-bottom: 5%;
 }
 
-.info {
-  display: inline-block;
-  color: #FF3399;
-  font-family: Arial;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  line-height: 1.6;
-  position: absolute;
-  top: 15%;
-  left: 4%;
-  
-}
-
 .proj-title {
   font-weight: bold;
 }
@@ -204,15 +277,13 @@ body {
 /*Contact*/
 
 #contact {
-  background-image: url("../img/vespa.jpg");
-  background-attachment: fixed;
+  background-color: grey;
   background-size: cover;
 }
 
 .container contact {
   text-align: left;
   display: inline-block;
-  background-attachment: fixed;
 }
 
 .contacts {
@@ -280,22 +351,8 @@ body {
   display: inline-block;
 }
 
-.google-map {
-  margin: 5% 2%;
-}
 
 /*Faq*/
-
-.faq {
-  background-color: #6E7171;
-  padding: 2%;
-  width: 100%;
-}
-
-.faqheader {
-  margin: 0 auto;
-  padding: 0 1%;
-}
 
 .learn-more {
   float: left;
@@ -321,8 +378,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
-
 
 /*footer*/
 

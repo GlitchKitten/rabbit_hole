@@ -107,9 +107,11 @@
     </nav><!--Navbar ends here-->
     
      <!--Hero Image-->
-    <div class="hero_image col-xs-12">
-      <h1 class = "hero_text">Amber Mulholland</h1>
-      <h2 class = "hero_text_sub">Web Developer</h2>
+    <div class="hero_image">
+      <div class = "hero">
+        <div class = "hero_text"><h1>Amber Mulholland</h1></div>  
+        <h2 class = "hero_text_sub">Web Developer</h2>
+      </div>
     </div>  
     
   <!--
@@ -207,7 +209,7 @@
       <div class="row faqheader">
         <h2 class="learn-more">Still dying to know more? Check out my CV.</h2>
         <div class = "modal-button">
-          <button class="btn btn-primary" data-toggle = "modal" data-target=".bs-example-modal-lg" >View CV</button>
+          <button id = "cv_button"class="btn btn-primary" data-toggle = "modal" data-target=".bs-example-modal-lg" >View CV</button>
         </div>
       </div>
     </div>
@@ -215,62 +217,46 @@
     <div class = "work_header">
       <h1> My Projects </h1>
     </div>
-  
-    <div class = "project_dropdown">
-      <li class= "dropdown">
-        <a class = "dropdown-toggle" data-toggle="dropdown" href = "#" role = "button" aria-expanded = "false" style="text-decoration:none">
-          Litote Clothing
-        <span class = "caret"> </span></a>
-          <ul class = "dropdown-menu" role = "menu">
-            <li><a href = "#harbor">Work 1</a></li>
-            <li><a href = "#horses">Work 2</a></li>
-          </ul>
-       </li>
-    </div>
-  
-     <div class = "projects">
-      <div class = "row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-          <div class = "project_title"> 
-            <h2>Litote Clothing</h2>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-          <div class = "project_description"> 
-            <h2>E-commerce web app created using Ruby on Rails, Bootstrap, JavaScript, jQuery and Ajax</h2> 
-          </div>
-        </div>
-      </div>
-    </div>  
-  
-    <div class = "projects">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class = "thumbnail">
-          <img src = "img/litote.jpg" alt = "project thumbnail">
-            <div class = "caption">
-              <p>E-commerce Website</p>
-            </div> 
-            <div class = "btn btn-default" role = "button">Check it Out</div>
-        </div>
-      </div>  
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class = "thumbnail projects">
-          <img src = "img/write.png" alt = "project thumbnail">
-            <div class = "caption">
-              <p>Coming Soon!</p>
-            </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class = "thumbnail projects">
-          <img src = "img/write.png" alt = "project thumbnail">
-            <div class = "caption">
-              <p>Coming Soon!</p>
-            </div>
-        </div>
-      </div>
-    </div>
 
+  <div class = "projects">
+    <div class = "row">
+      <div class = "project_title column-item person" id="litote">
+        <div class = "column-item-content">
+          <div class = "person-details">
+            <h2 class = "person-name">Litote Clothing</h2>
+            <span class = "project_description"> E-commerce web app created using Ruby on Rails, Bootstrap, JavaScript, jQuery and Ajax<br>
+              <div class = "project_link">
+                <img src = "img/git_icon.png" alt="git_icon"> <a href="https://github.com/GlitchKitten/newapp"> GitHub - </a>
+                <img src = "img/desktop_icon.png" alt="desktop_icon"> <a href = "https://litoteclothing.herokuapp.com/"> Project</a></div>
+            </span>
+          </div>  
+        </div>    
+      </div> 
+      <div class = "project_title column-item person" id="in_progress" onclick="">
+        <div class = "column-item-content">
+          <div class = "person-details">          
+            <h2 class = "person-name">Current Project</h2>
+            <span class = "project_description"> To-do list built with HTML, CSS, Rails and AJAX, JavaScript and jQuery<br>
+            <!--  
+              <div class = "project_link">
+                <img src = "img/git_icon.png" alt="git_icon"> <a href="https://github.com/GlitchKitten/rails_todo"> GitHub - </a>
+                <img src = "img/desktop_icon.png" alt="desktop_icon"> Currently in the works!</a></div> -->
+            </span>
+          </div>  
+        </div>    
+      </div>
+      <div class = "project_title column-item person col-lg-md-4 col-sm-xs-12" id="coming_soon" onclick="">
+        <div class = "column-item-content">
+          <div class = "person-details">
+            <h2 class = "person-name">Coming Soon</h2>
+            <span class = "project_description"> Who knows what I'll come up with next!</span>
+          </div>  
+        </div>    
+      </div>
+    </div>
+  </div>
+             
+  
   <!--
     <div class = "container faq anchor" id = "faq">
       <div class = "panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -337,7 +323,7 @@
       
     <!--Contact-->
  
-    <div class = "container contact anchor" id = "contact" data-stellar-background-ratio = ".5">
+    <div class = "container contact anchor" id = "contact">
       <div class="contacts">
         <div class="contact-information">
           <div class ="col-lg-md-4 col-sm-xs-12">
@@ -475,7 +461,7 @@
         </div>
       </div>
     </footer>
-    
+
     <script type = "text/javascript">
       var $root = $('html, body');
         $('.navbar-nav a').click(function(){

@@ -55,7 +55,7 @@
     <div class = "navbar navbar-header navbar-inverse navbar-fixed-top" role = "navigation">
       <div class = "container-fluid">
         <div class = "project">
-          <a href = "#home" style = "text-decoration:none"><img src ="img/sig.png" height = 30px></a>
+          <a href = "#home" style = "text-decoration:none"><img src ="img/sig.png" height = 32px></a>
         </div>
         <div class = "navbar-header" id="heading">
           <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
@@ -67,7 +67,7 @@
             
           <div class = "navbar-collapse navbar-header collapse">
             <ul class = "nav navbar-nav">
-              <li><a href = "#" style="text-decoration:none;">Home</a></li>
+              <li><a href = "#home" style="text-decoration:none;">Home</a></li>
               <li><a href = "#about">About</a></li>
               <li><a href = "#projects">Projects</a></li>
               <li><a href = "#contact">Contact</a></li>
@@ -79,7 +79,7 @@
     </nav><!--Navbar ends here-->
     
      <!--Hero Image-->
-    <div class="hero_image">
+    <div class="hero_image" id="home">
       <div class = "hero">
         <div class = "hero_text"><h1>Amber Mulholland</h1></div>  
         <h2 class = "hero_text_sub">Web Developer</h2>
@@ -111,17 +111,27 @@
 <!--About-->
     <div class = "container about">
       <div class="row anchor" id="about">
-        <div class="col-lg-3 col-md-3 col-sm-xs-12">
-          <img class="img-responsive profile" img src = "img/profile.jpg" alt="author_photo">
+        <div class="col-lg-4 col-md-4 col-sm-xs-12">
+          <img class="img-responsive profile" img src = "img/self.jpg" alt="author_photo" id = "profile_pic">
         </div>
-        <div class = "col-lg-3 col-md-3 col-sm-xs-12">
+        <div class = "col-lg-8 col-md-8 col-sm-xs-12">
           <div class = "bio">
             <h2>Who Am I?</h2>
             <p>I've recently completed a full stack web development bootcamp through CareerFoundry. Currently, I'm working on personal projects and hoping to join the real-world of web development in the near future. </p>
             <p>In my spare time I'm an avid reader with an interest in film photography, art and a bit of video gaming on the side.</p>
+            <p>You can find me in some places</p>
+            <ul class = "social_media">
+              <li><a href = "https://uk.linkedin.com/in/amberbmulholland"><img src = "img/linkedin.png"></a></li>
+              <li><a href = "https://www.goodreads.com/user/show/4281466-amber-haschenburger"><img src = "img/goodreads.png"></a></li>
+              <li><a href = "http://quirkandhappenstance.tumblr.com/"><img src = "img/tumblr.png"></a></li>
+              <li><a href = "https://uk.pinterest.com/ahaschenburger/"><img src = "img/pinterest.png"></a></li>
+              <li><a href = "https://www.facebook.com/amber.haschenburger.9"><img src = "img/facebook.png"></a></li>
+              <li><a href = "https://github.com/GlitchKitten"><img src = "img/github.png"></a></li>
+            </ul>  
           </div>
         </div>
-        <div class = "col-lg-6 col-md-6 col-sm-xs-12">
+      </div>  
+        <div class = "col-lg-md-12 col-sm-xs-12">
           <div class = "skills_column">
             <h2>What Do I Know?</h2>
             <div class="progress">
@@ -207,7 +217,7 @@
       <div class = "project_title column-item person" id="in_progress" onclick="">
         <div class = "column-item-content">
           <div class = "person-details">          
-            <h2 class = "person-name">Current Project</h2>
+            <h2 class = "person-name">Currently Working On</h2>
             <span class = "project_description"> To-do list built with HTML, CSS, Rails and AJAX, JavaScript and jQuery<br>
             <!--  
               <div class = "project_link">
@@ -296,20 +306,20 @@
     <!--Contact-->
 <div class = "contact_container">    
   <div class = "contact-block col-lg-4 col-md-4 col-sm-12 col-xs-12">
-    <h1> WANT TO SAY HI?</h1>
+    <h1> Seen enough and want to say hi?</h1>
     <div class = "contacts contact-information">
       <div class="row">
         <div class="col-lg-md-sm-xs-12 col-lg-12">
           <h2><span class = "glyphicon glyphicon-earphone"></h2>
-          <p>07512345678</p>
+          <p>Phone: 07562726841</p>
         </div>
         <div class="col-md-12 col-lg-12">
           <h2><span class = "glyphicon glyphicon-envelope"></h2>
-          <a href = "mailto:ahaschenburger@gmail.com" style = "text-decoration: none"><p>ahaschenburger@gmail.com</p></a>
+          <a href = "mailto:ahaschenburger@gmail.com" style = "text-decoration: none"><p>amberbmulholland@gmail.com</p></a>
         </div>
         <div class="col-md-12 col-lg-12">
           <h2><span class = "glyphicon glyphicon-comment"></h2>
-          <p>amber.haschenburger </p>
+          <p>Skype: amber.haschenburger </p>
         </div>
       </div>
     </div>

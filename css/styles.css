@@ -91,25 +91,25 @@ header {
 
 .about h2 {
   font-weight: bold;
-  padding: 2%;
 }
 
-.profile {
-  margin-right: 3%;
-  border-radius: 50%;
+#profile_pic {
+  border-radius: 5%;
   float: left;
+  height: 200px;
+  margin-right: 2%;
 }
 
 .bio {
-  padding: 2%;
+  padding-left: 2%;
 }
 
 .skills_column {
-  padding: 2%;
+  padding-left: 2%;
 }
 
 .faq-header {
-  padding: 2%;
+  padding-left: 2%;
 }
 
 .progress .progress-bar {
@@ -118,6 +118,16 @@ header {
 
 #cv_button{
   background-color: #BABEC2;
+}
+
+.social_media li {
+  list-style: none;
+  display: inline-block;
+  padding: 1%;
+}
+
+.learn-more {
+  margin-left: 3%;
 }
 
 /* Projects */
@@ -131,7 +141,7 @@ header {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 15%;
   padding-bottom: 20%;
   overflow: hidden;
 }
@@ -177,7 +187,7 @@ header {
 }                      
 
 #litote{                
-  background-image: url('../img/litote.jpg');                  
+  background-image: url('../img/litote (2).jpg');                  
 }
 
 #in_progress {
@@ -255,7 +265,7 @@ header {
 /*Contact*/
 
 .contact_container {
-  padding-top: 1%;
+  padding-top: 3%;
 }
 
 .contact-block {
@@ -323,6 +333,15 @@ header {
 
 .contact-label {
   float: left;
+}
+
+.form-control {
+  background-color: #F8F8F9;
+}
+
+.contact-information a {
+  font-size: 1em;
+  font-weight: 550;
 }
 
 

@@ -192,6 +192,7 @@ header {
 
 #in_progress {
   background-image: url('../img/Todo List.jpg'); 
+  background-size: contain;
 }
 
 #coming_soon {

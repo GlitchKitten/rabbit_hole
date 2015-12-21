@@ -191,9 +191,7 @@ header {
 }
 
 #in_progress {
-  background-image: url('../img/pen1.png'); 
-  background-size: 3%;
-  background-color: #555968;
+  background-image: url('../img/Todo List.jpg'); 
 }
 
 #coming_soon {

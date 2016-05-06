@@ -49,63 +49,35 @@
     <script src="js/scripts.js"></script>
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  
-  <body data-spy = "scroll" data-target=".navbar">
-
-
-<!-- Navigation bar starts here -->
-    <nav>
-    <div class = "navbar navbar-header navbar-inverse navbar-fixed-top" role = "navigation">
-      <div class = "container-fluid">
-        <div class = "project">
-          <a href = "#home" style = "text-decoration:none"><img src ="img/sig.png" height = 32px></a>
-        </div>
-        <div class = "navbar-header" id="heading">
-          <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
-            <span class = "sr-only"> Toggle Navigation</span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-          </button>
-            
-          <div class = "navbar-collapse navbar-header collapse">
-            <ul class = "nav navbar-nav">
-              <li><a href = "#home" style="text-decoration:none;">Home</a></li>
-              <li><a href = "#about">About</a></li>
-              <li><a href = "#projects">Projects</a></li>
-              <li><a href = "#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div><!--end nav container-->
-    </nav><!--Navbar ends here-->
-    
+  <body>
+   
      <!--Hero Image-->
     <div class="hero_image" id="home">
       <div class = "hero_text"><h1 id = "first_name">Amber  </h1>
         <h1 id = "hero_text_sub">Mulholland</h1>
       </div> 
       <br>
-      
-      <a href="#" title="" class="btn btn-hero btn-lg">Projects</a>
-      <a href="#" title="" class="btn btn-hero btn-lg">Contact</a>
-      <div class = "modal fade bs-example-modal-lg" tabindex="-1" role = "dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="True">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">My Resume</h4>
-            </div>
-            <div class="modal-body">
-              <iframe id="resume" src="img/res.pdf"></iframe>
+      <div class = buttons>
+        <a href="pages/projects.html" title="" class="btn btn-hero btn-lg">Projects</a>
+        
+        <div class = "modal fade bs-example-modal-lg" tabindex="-1" role = "dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="True">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">My Resume</h4>
+              </div>
+              <div class="modal-body">
+                <iframe id="resume" src="img/AMulholland CV.pdf"></iframe>
+              </div>
             </div>
           </div>
-        </div>
+        </div>  
+        <button class="btn btn-hero btn-lg" data-toggle = "modal" data-target=".bs-example-modal-lg">CV</button>
+        
+        <a href="pages/contact.html" title="" class="btn btn-hero btn-lg">Contact</a>
       </div>
-        <button class="btn btn-hero btn-lg" data-toggle = "modal" data-target=".bs-example-modal-lg" >View CV</button>
-    </div>
-      
+        
       <div class = "social_media"> 
         <ul>
           <li><a href = "https://uk.linkedin.com/in/amberbmulholland"><img src = "img/linkedin.png"></a></li>
@@ -115,367 +87,30 @@
           <li><a href = "https://www.facebook.com/amber.haschenburger.9"><img src = "img/facebook.png"></a></li>
           <li><a href = "https://github.com/GlitchKitten"><img src = "img/github.png"></a></li>
         </ul>  
-      </div>  
+      </div>
+    </div>  
     
-  <!--
-    <div class="container goals">
-      <div class="row">
-        <div class="col-md-4 col-sm-xs-12">
-          <h2>Portfolio Concept</h2>
-          <p>To use this as a space to highlight projects as they are completed within this course - utilising clean, bright design.</p>
-          <p><button type="button" class="btn btn-default goal" data-toggle="tooltip" data-placement="top" title="So much pink so far!">View details &raquo;</button></p>
-        </div>
-        <div class="col-md-4 col-sm-xs-12">
-          <h2>Project Goals</h2>
-          <p>To complete this course in six months (or maybe less) while including time for deeper exploration outside of the course materials.</p>
-          <p><button type="button" class="btn btn-default goal" data-toggle="tooltip" data-placement="top" title="Still on target!">View details &raquo;</button></p>
-        </div>
-        <div class="col-md-4 col-sm-xs-12">
-          <h2>Course Goals</h2>
-          <p>I hope to use this course as a jumping off point to change careers and find work as an entry level developer. </p>
-          <p><button type="button" class="btn btn-default goal" data-toggle="tooltip" data-placement="top" title="Future woos!">View details &raquo;</button></p>
-        </div>
-      </div>
-    </div> --> <!-- /end container -->
-  </div>
-  
 <!--About-->
-    <div class = "container about">
-      <div class="row anchor" id="about">
-        <div class="col-lg-4 col-md-4 col-sm-xs-12">
-          <img class="img-responsive profile" img src = "img/self.jpg" alt="author_photo" id = "profile_pic">
-        </div>
-        <div class = "col-lg-8 col-md-8 col-sm-xs-12">
-          <div class = "bio">
-            <h2>Who Am I?</h2>
-            <p>I've recently completed a full stack web development bootcamp through CareerFoundry. Currently, I'm working on personal projects and hoping to join the real-world of web development in the near future. </p>
-            <p>In my spare time I'm an avid reader with an interest in film photography, art and a bit of video gaming on the side.</p>
-            <p>You can find me in some places.</p>
-            <ul class = "social_media">
-              <li><a href = "https://uk.linkedin.com/in/amberbmulholland"><img src = "img/linkedin.png"></a></li>
-              <li><a href = "https://www.goodreads.com/user/show/4281466-amber-haschenburger"><img src = "img/goodreads.png"></a></li>
-              <li><a href = "http://quirkandhappenstance.tumblr.com/"><img src = "img/tumblr.png"></a></li>
-              <li><a href = "https://uk.pinterest.com/ahaschenburger/"><img src = "img/pinterest.png"></a></li>
-              <li><a href = "https://www.facebook.com/amber.haschenburger.9"><img src = "img/facebook.png"></a></li>
-              <li><a href = "https://github.com/GlitchKitten"><img src = "img/github.png"></a></li>
-            </ul>  
-          </div>
-        </div>
-      </div>  
-        <div class = "col-lg-md-12 col-sm-xs-12">
-          <div class = "skills_column">
-            <h2>What Do I Know?</h2>
-            <div class="progress">
-              <div class="progress-bar active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 75%;">
-                HTML
-              </div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 70%;">
-                CSS
-              </div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar " role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 65%;">
-                Git
-              </div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 55%;">
-                Ruby on Rails
-              </div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 45%;">
-                Bootstrap
-              </div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 30%;">
-                JavaScript
-              </div>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 15%;">
-                jQuery
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class = "modal fade bs-example-modal-lg" tabindex="-1" role = "dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="True">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">My Resume</h4>
-            </div>
-            <div class="modal-body">
-              <iframe id="resume" src="img/res.pdf"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class="faq-header">
-      <div class="row faqheader">
-        <h2 class="learn-more">Still dying to know more? Check out my CV.</h2>
-        <div class = "modal-button">
-          <button id = "cv_button"class="btn btn-primary" data-toggle = "modal" data-target=".bs-example-modal-lg" >View CV</button>
-        </div>
-      </div>
-    </div>
-
-    <div class = "work_header">
-      <h1> My Projects </h1>
-    </div>
-
-  <div class = "projects" id = "projects">
-    <div class = "row">
-      <div class = "project_title column-item person" id="litote">
-        <div class = "column-item-content">
-          <div class = "person-details">
-            <h2 class = "person-name">Litote Clothing</h2>
-            <span class = "project_description"> E-commerce web app created using Ruby on Rails, Bootstrap, JavaScript, jQuery and Ajax<br>
-              <div class = "project_link">
-                <img src = "img/git_icon.png" alt="git_icon"> <a href="https://github.com/GlitchKitten/newapp"> GitHub - </a>
-                <img src = "img/desktop_icon.png" alt="desktop_icon"> <a href = "https://litoteclothing.herokuapp.com/"> Project</a></div>
-            </span>
-          </div>  
-        </div>    
-      </div> 
-      <div class = "project_title column-item person" id="in_progress" onclick="">
-        <div class = "column-item-content">
-          <div class = "person-details">          
-            <h2 class = "person-name">In Progress</h2>
-            <span class = "project_description"> To-do list built with HTML, CSS, Rails and AJAX<br>
-              <div class = "project_link">
-                <img src = "img/git_icon.png" alt="git_icon"> <a href="https://github.com/GlitchKitten/rails_todo"> GitHub - </a>
-                <img src = "img/desktop_icon.png" alt="desktop_icon"> Currently in the works!</a></div>
-            </span>
-          </div>  
-        </div>    
-      </div>
-      <div class = "project_title column-item person col-lg-md-4 col-sm-xs-12" id="coming_soon" onclick="">
-        <div class = "column-item-content">
-          <div class = "person-details">
-            <h2 class = "person-name">Coming Soon</h2>
-            <span class = "project_description"> Who knows what I'll come up with next!</span>
-          </div>  
-        </div>    
-      </div>
-    </div>
-  </div>
-             
-  
-  <!--
-    <div class = "container faq anchor" id = "faq">
-      <div class = "panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class = "panel panel-default">
-          <div class = "panel-heading" role = "tab" id="headingOne">
-            <h4 class = "panel-title">
-            <a data-toggle="collapse" data-parent = "#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration:none">
-              <span class = "glyphicon glyphicon-plus"></span>
-                E-Commerce Website
-            </a>
-            </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse" role= "tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body">
-              <img src = "img/litote.jpg" alt = "project thumbnail">
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration:none">
-                <span class = "glyphicon glyphicon-plus"></span> The Beatles or Elvis?
-              </a>
-            </h4>
-          </div>
-          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body">
-              Love me some Beatles, though certain members of my family would disagree.
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration:none">
-                <span class = "glyphicon glyphicon-plus"></span> Pizza or chocolate?
-              </a>
-            </h4>
-          </div>
-          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-              Not to fall prey to stereotypes, but chocolate all the way. Especially if it comes in the form of cake.
-            </div>
-          </div>
-        </div>
-        <div class = "panel panel-default">
-          <div class = "panel-heading" role = "tab" id="headingFour">
-            <h4 class = "panel-title">
-              <a class = "collapsed" data-toggle="collapse" data-parent = "#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="text-decoration:none">
-                <span class = "glyphicon glyphicon-plus"></span> Cats or dogs?
-              </a>
-            </h4>
-          </div>
-          <div id="collapseFour" class="panel-collapse collapse" role= "tabpanel" aria-labelledby="headingFour">
-            <div class="panel-body">
-              Cats, cats and cats.
-            </div>
-          </div>
-        </div>
-        </div>
-      </div> 
--->  
-      
-    <!--Contact-->
-<div class = "contact_container">    
-  <div class = "contact-block col-lg-4 col-md-4 col-sm-12 col-xs-12">
-    <h1> Seen enough and want to say hi?</h1>
-    <div class = "contacts contact-information">
-      <div class="row">
-        <div class="col-lg-md-sm-xs-12">
-          <h2><span class = "glyphicon glyphicon-earphone"></h2>
-          <p>Phone: 07562726841</p>
-        </div>
-        <div class="col-md-12 col-lg-12">
-          <h2><span class = "glyphicon glyphicon-envelope"></h2>
-          <a href = "mailto:ahaschenburger@gmail.com" style = "text-decoration: none"><p>amberbmulholland@gmail.com</p></a>
-        </div>
-        <div class="col-md-12 col-lg-12">
-          <h2><span class = "glyphicon glyphicon-comment"></h2>
-          <p>Skype: amber.haschenburger </p>
-        </div>
-      </div>
-    </div>
-  </div>         
-            
-  <div class = "row contact-form col-lg-8 col-md-8 col-sm-12 col-xs-12" id="contact">
-      <div>
-          <form action="/login" method="post" name="login">
-            <div class = "form-group">
-              <label for="name" title="Optional">Your name</label>
-              <input class= "form-control" type = "textBox" name="textBox" id ="name" placeholder = "Enter name">
-            </div>
-            <div class = "form-group">
-              <label for="phone" title="Optional">Phone Number</label>
-              <input class= "form-control" type = "tel" name="tel" minlength=10 id ="phone" placeholder = "Enter your digits">
-            </div>
-            <div class = "form-group">
-              <label for="Email" title="Required field">*Email address</label>
-              <input class = "form-control" type ="email" name="email" id="email" required ="required" placeholder="Enter email">
-            </div>
-            <div class = "form-group">
-              <label for="Message" title="Also a required field">*Message</label>
-              <textarea placeholder = "Leave me a note" class="form-control contact-form message-box" name="textarea" style="resize:none" cols = "40" rows = "5" required="required" maxlength="500"></textarea>
-              <br>
-              <button type ="submit" id = "submit" class="btn btn-default">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>  
-</div>             
- 
-  
-   
-    <!--  
-      <div class = "container faq anchor" id = "faq">
-    	<div class = "panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    		<div class = "panel panel-default">
-    			<div class = "panel-heading" role = "tab" id="headingOne">
-    				<h4 class = "panel-title">
-    				<a data-toggle="collapse" data-parent = "#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration:none">
-              <span class = "glyphicon glyphicon-plus"></span>
-                Batman or Superman?
-    				</a>
-    				</h4>
-    			</div>
-    			<div id="collapseOne" class="panel-collapse collapse" role= "tabpanel" aria-labelledby="headingOne">
-    				<div class="panel-body">
-    					Definitely Batman. Who wouldn't love a man who can fashion his own tech?
-    				</div>
-    			</div>
-    		</div>
-    		<div class="panel panel-default">
-    			<div class="panel-heading" role="tab" id="headingTwo">
-    				<h4 class="panel-title">
-      				<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration:none">
-        				<span class = "glyphicon glyphicon-plus"></span> The Beatles or Elvis?
-      				</a>
-      			</h4>
-    			</div>
-    			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      		  <div class="panel-body">
-        			Love me some Beatles, though certain members of my family would disagree.
-      			</div>
-    			</div>
-  			</div>
-  			<div class="panel panel-default">
-   				<div class="panel-heading" role="tab" id="headingThree">
-      			<h4 class="panel-title">
-        			<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration:none">
-        				<span class = "glyphicon glyphicon-plus"></span> Pizza or chocolate?
-        			</a>
-      			</h4>
-    			</div>
-    			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      			<div class="panel-body">
-        			Not to fall prey to stereotypes, but chocolate all the way. Especially if it comes in the form of cake.
-      			</div>
-    			</div>
-  			</div>
-    		<div class = "panel panel-default">
-    			<div class = "panel-heading" role = "tab" id="headingFour">
-    				<h4 class = "panel-title">
-    					<a class = "collapsed" data-toggle="collapse" data-parent = "#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="text-decoration:none">
-    						<span class = "glyphicon glyphicon-plus"></span> Cats or dogs?
-    					</a>
-    				</h4>
-    			</div>
-    			<div id="collapseFour" class="panel-collapse collapse" role= "tabpanel" aria-labelledby="headingFour">
-    				<div class="panel-body">
-    					Cats, cats and cats.
-    				</div>
-    			</div>
-    		</div>
-    			<div class = "panel panel-default">
-    				<div class = "panel-heading" role = "tab" id="headingFive">
-    					<h4 class = "panel-title">
-    						<a class="collapsed" data-toggle="collapse" data-parent = "#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="text-decoration:none">
-    							<span class = "glyphicon glyphicon-plus"></span>  Playstation or XBox?
-    						</a>
-    					</h4>
-    				</div>
-    				<div id="collapseFive" class="panel-collapse collapse" role= "tabpanel" aria-labelledby="headingFive">
-    					<div class="panel-body">
-    						Playstation? XBox? I'll never decide!
-    					</div>
-    				</div>
-    			</div>
-			  </div>
-      </div>
-  -->  
+         <div class = "col-lg-md-12 col-sm-xs-12">
+          <div class = "skills">
+              <ul class = "skills">
+                <li>Currently Playing With: </li>
+                <li> HTML </li>
+                <li> CSS </li>
+                <li> Bootstrap </li>
+                <li> Ruby on Rails </li>
+                <li> JavaScript </li>
+                <li> Git </li> 
+                <li> AngularJS </li>
+                <li> jQuery </li>
+              </ul> 
+           </div>
+         </div>  
     <footer>
       <div class = "row">
         <p class = "col-lg-md-sm-xs-12">&copy; Amber Mulholland 2015</p>
       </div>  
-       <!--
-      <div id = "last-modified"></div>
-      <div class = "follow">
-        <a href="https://twitter.com/haschie" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @haschie</a>
-        <div class = "fb" style = "float:right; margin:1.5% 1.5% 1.5% 0">
-          <div class="fb-like" id = "fb"  data-href="https://www.facebook.com/pages/Quirk-Happenstance/185911178092767" data-width="80" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-        </div>
-      </div>
-    -->
-    </footer>
+    </footer>       
 
     <script type = "text/javascript">
       var $root = $('html, body');

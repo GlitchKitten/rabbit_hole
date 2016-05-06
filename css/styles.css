@@ -22,7 +22,7 @@ header {
 .btn {
   font-weight: 600;
   background-color: #35404F;
-  margin: 2em 2em 1em;
+  margin: 2em 2em 4em;
 }
 
 .btn:hover {
@@ -36,8 +36,10 @@ header {
     border: 2px solid white;
 }
 .btn-hero:active, .btn-hero:hover {
-    background-color: grey;
-    color: #fff;
+    background-color: white;
+    opacity: .4;
+    border: 2px solid white;
+    color: black;
 }
 
 /*Nav Bar*/
@@ -85,7 +87,7 @@ header {
 }
 
 .hero_text h1 { 
-  font-size: 6em;
+  font-size: 5.5em;
   font-family: 'Oswald', sans-serif;
   color: white;
   overflow: hidden;
@@ -103,25 +105,28 @@ header {
   font-family: 'Oswald', sans-serif;
 }
 
+.buttons {
+  margin: 0 auto;
+}
 /*About Section*/
 
 .about h2 {
   font-weight: bold;
 }
 
-#profile_pic {
-  border-radius: 5%;
-  float: left;
-  height: 200px;
-  margin-right: 2%;
+.skills {
+  text-align: center;
+  background-color: #BABEC2;
+  padding: .75em;
+  
 }
 
-.bio {
-  padding-left: 2%;
-}
-
-.skills_column {
-  padding-left: 2%;
+.skills li { 
+  display: inline;
+  list-style: none;
+  padding: 3em 1em;
+  color: black;
+  text-transform: uppercase;
 }
 
 .faq-header {
@@ -132,14 +137,11 @@ header {
   background-color: #BABEC2;
 }
 
-#cv_button{
-  background-color: #BABEC2;
-}
-
-.social_media li {
+.social_media ul li {
   list-style: none;
   display: inline-block;
   padding: 1%;
+  margin: 0 auto;
 }
 
 .learn-more {
@@ -360,23 +362,6 @@ header {
 }
 
 
-/*Faq*/
-
-.learn-more {
-  float: left;
-  padding: 2%;
-}
-
-.modal-button {
-  float: right;
-  padding: 3.4%;
-}
-
-.modal-button .btn {
-  background-color: #FF3399;
-  border: #FF3399;
-}
-
 .modal-body{
   height: 500px;
 }
@@ -387,10 +372,11 @@ header {
   height: 100%;
 }
 
-/*footer*/
+/*Footer*/
 
 footer {
-  padding: 1%;
+  padding: .4em 2em 0;
+  background-color: #2A3A49;
 }
 
 footer p {
